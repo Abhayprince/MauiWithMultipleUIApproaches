@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiWithMultipleUIApproaches.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiWithMultipleUIApproaches"
+    Title="UI Design Approaches in MAUI"
+    BackgroundColor="White">
+
+    <!--<BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <BlazorWebView.RootComponents>
+            <RootComponent Selector="#app" ComponentType="{x:Type local:Routes}" />
+        </BlazorWebView.RootComponents>
+    </BlazorWebView>-->
+
+    <VerticalStackLayout
+        Padding="20"
+        HorizontalOptions="Center"
+        Spacing="20"
+        VerticalOptions="Center">
+        <Label
+            FontAttributes="Bold"
+            FontSize="25"
+            HorizontalOptions="Center"
+            Text=".NET MAUI != XAML"
+            TextColor="Black" />
+        <Label Text=".NET MAUI is NOT just XAML" TextColor="Black" />
+        <Label Text="XAML is just a way to design UI in .Net MAUI" TextColor="Black" />
+        <Label Text=".Net MAUI supports other UI design approaches as well, like, UI using Blazor Hynrid, UI using C# only" TextColor="Black" />
+        <Label Text="Click on the following buttons to see the pages with UI designed with different approaches" TextColor="Black" />
+        <Button Clicked="XamlButton_Clicked" Text="XAML Page" />
+        <Button Clicked="BlazorButton_Clicked" Text="Blazor Page" />
+        <Button Clicked="CSharpButton_Clicked" Text="C# Page" />
+    </VerticalStackLayout>
+
+</ContentPage>
